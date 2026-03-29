@@ -1,0 +1,165 @@
+{
+  "colorScheme": "dark",
+  "fonts": [
+    {
+      "family": "Roboto",
+      "role": "body"
+    },
+    {
+      "family": "Open Sans",
+      "role": "body"
+    },
+    {
+      "family": "Helvetica Neue",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#F1EADE",
+    "accent": "#DED4E6",
+    "background": "#151415",
+    "textPrimary": "#151415",
+    "link": "#DED4E6"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Roboto",
+      "heading": "Roboto"
+    },
+    "fontStacks": {
+      "heading": [
+        "Switzer-Regular",
+        "system-ui",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Oxygen",
+        "Ubuntu",
+        "Cantarell",
+        "Open Sans",
+        "Helvetica Neue",
+        "sans-serif"
+      ],
+      "body": [
+        "Switzer-Regular",
+        "system-ui",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Oxygen",
+        "Ubuntu",
+        "Cantarell",
+        "Open Sans",
+        "Helvetica Neue",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Switzer-Medium",
+        "system-ui",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Oxygen",
+        "Ubuntu",
+        "Cantarell",
+        "Open Sans",
+        "Helvetica Neue",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "24px",
+      "h2": "24px",
+      "body": "15.36px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "10px"
+  },
+  "components": {
+    "input": {
+      "background": "transparent",
+      "textColor": "#151415",
+      "borderColor": null,
+      "borderRadius": "0px",
+      "borderRadiusCorners": {
+        "topLeft": "0px",
+        "topRight": "0px",
+        "bottomRight": "0px",
+        "bottomLeft": "0px"
+      },
+      "shadow": "none"
+    },
+    "buttonPrimary": {
+      "background": "#F1EADE",
+      "textColor": "#151415",
+      "borderRadius": "0px",
+      "borderRadiusCorners": {
+        "topLeft": "0px",
+        "topRight": "0px",
+        "bottomRight": "0px",
+        "bottomLeft": "0px"
+      },
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "#DED4E6",
+      "textColor": "#101214",
+      "borderRadius": "19.2px",
+      "borderRadiusCorners": {
+        "topLeft": "19.2px",
+        "topRight": "19.2px",
+        "bottomRight": "19.2px",
+        "bottomLeft": "19.2px"
+      },
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": null,
+    "favicon": "https://obsidianassembly.com/fav/favicon.ico",
+    "ogImage": "/share-screen.jpg"
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": "Submit Admission",
+      "reasoning": "Button #0 ('Submit Admission') has a vibrant red/orange background (#F1EADE) and action-oriented text, making it the most likely primary CTA."
+    },
+    "secondary": {
+      "index": 5,
+      "text": "Accept all",
+      "reasoning": "Button #5 ('Accept all') has a different background color (#DED4E6) and serves as a secondary action, fitting the role of a secondary CTA."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "modern",
+    "energy": "medium",
+    "targetAudience": "tech-savvy individuals"
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": ""
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  },
+  "__llm_metadata": {
+    "logoSelection": {
+      "llmCalled": false,
+      "llmSucceeded": false,
+      "finalSource": "none"
+    },
+    "buttonClassification": {
+      "llmCalled": true,
+      "llmSucceeded": true
+    }
+  }
+}

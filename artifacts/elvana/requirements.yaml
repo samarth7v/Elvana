@@ -1,0 +1,13 @@
+packages:
+  "framer-motion": "For cinematic, scroll-triggered page reveals and elegant transitions"
+  "react-hook-form": "For robust waitlist form state management"
+  "@hookform/resolvers": "For Zod validation integration with react-hook-form"
+
+images:
+  - path: "artifacts/elvana/public/images/hero-texture.png"
+    description: "Extremely subtle, dark, moody cinematic noise texture in deep charcoal and black. Almost invisible, purely for adding depth to a luxury dark theme background."
+    aspect_ratio: "16:9"
+
+notes:
+  - Using generated API hooks from @workspace/api-client-react for waitlist submission
+  - The design relies heavily on typography and negative space, mimicking an editorial, luxury aesthetic

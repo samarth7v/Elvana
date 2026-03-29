@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-serif: 'DM Serif Display', Georgia, serif;
+
+  --color-background: oklch(13.7% 0.004 300);
+  --color-foreground: oklch(92% 0.012 70);
+
+  --color-primary: oklch(92% 0.012 70);
+  --color-primary-foreground: oklch(13.7% 0.004 300);
+
+  --color-secondary: oklch(20% 0.008 300);
+  --color-secondary-foreground: oklch(80% 0.01 70);
+
+  --color-accent: oklch(82% 0.03 280);
+  --color-accent-foreground: oklch(13.7% 0.004 300);
+
+  --color-muted: oklch(20% 0.006 300);
+  --color-muted-foreground: oklch(60% 0.01 60);
+
+  --color-card: oklch(16% 0.005 300);
+  --color-card-foreground: oklch(92% 0.012 70);
+
+  --color-border: oklch(25% 0.006 300);
+  --color-input: oklch(18% 0.005 300);
+  --color-ring: oklch(82% 0.03 280);
+
+  --color-destructive: oklch(55% 0.18 28);
+  --color-destructive-foreground: oklch(95% 0.01 70);
+
+  --color-popover: oklch(16% 0.005 300);
+  --color-popover-foreground: oklch(92% 0.012 70);
+
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius: 0px;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .bg-grain {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+}

@@ -48,6 +48,18 @@ Every package extends `tsconfig.base.json` which sets `composite: true`. The roo
 - `pnpm run build` — runs `typecheck` first, then recursively runs `build` in all packages that define it
 - `pnpm run typecheck` — runs `tsc --build --emitDeclarationOnly` using project references
 
+## Artifacts
+
+### `artifacts/elvana` (`@workspace/elvana`)
+
+Landing page for Elvana — a behavioral intervention app. Built with React + Vite + Tailwind v4.
+- Dark editorial design inspired by Obsidian Assembly
+- Sections: Hero, Problem cycle, Why solutions fail, The insight, How Elvana works, Waitlist form, Footer
+- Waitlist form connects to POST /api/waitlist
+- Uses framer-motion for scroll-reveal animations
+- Fonts: DM Serif Display (headings) + DM Sans (body)
+- Colors: #151415 background, #F1EADE primary, #DED4E6 accent
+
 ## Packages
 
 ### `artifacts/api-server` (`@workspace/api-server`)

@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Elvana"
+version = "1.0.0"
+id = "artifacts/elvana"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18191
+
+[services.development]
+run = "pnpm --filter @workspace/elvana run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/elvana", "run", "build" ]
+publicDir = "artifacts/elvana/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18191"
+BASE_PATH = "/"
